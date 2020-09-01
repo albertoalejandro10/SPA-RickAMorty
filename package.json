@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "JavaScript",
+    "SPA"
+  ],
+  "author": "AlbertoAlejandro10 <alberto196g@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "babel-loader": "^8.1.0",
