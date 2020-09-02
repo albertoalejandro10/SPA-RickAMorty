@@ -3,7 +3,7 @@ const Header = () => {
         <div class="Header-main">
             <div class="Header-">
                 <h1>
-                    <a href="/">
+                    <a href="/SPA-RickAMorty/">
                         100tifi.com
                     </a>
                 </h1>
