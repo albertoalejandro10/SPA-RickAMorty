@@ -1,6 +1,7 @@
 const path = require('path'); // Nos permite acceder a donde estamos en las carpetas. Ya sea en local o en la nube.
 
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Archivo necesario para trabjar con Html
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // Archivo necesario para trabajar con Html
+const CopyWebpackPlugin = require('copy-webpack-plugin'); //
 
 module.exports = { //Aqui se encuentra toda la configuracion de lo que va a suceder. Modulo para exportar
 
@@ -47,7 +48,10 @@ module.exports = { //Aqui se encuentra toda la configuracion de lo que va a suce
                 filename: './index.html' //El nombre que tendra el archivo
 
             }
-        )
-
+        ),
+        new CopyWebpackPlugin({
+            patterns:[{ from: './src/styles/styles.css', 
+            to: ''}],
+        })
     ]
 }
